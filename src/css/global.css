@@ -2,19 +2,17 @@
   /*fontes */
 
   --MAIN_FONT: "BW MODELICA SS01";
-  --SENCOND_FONT: "roboto";
+  --SENCOND_FONT: "Roboto", sans-serif;
 
   /*cores da marca*/
-  --PLANO_FUNDO: #fff;
-  --COR_LARANJA: #fe7750;
-  --COR_ROXA: #46005a;
-  --COR_BLACK: black;
-
-  /* possiveis cores complementares, cores mais claras*/
-  --CINZA: #e8e8e8;
-  --ROXO_CLARO: #e4ceea;
-  --ROZADO: #f9d9d7;
-  --ROXO: #952eb7;
+  --LIGHT-PURPLE: #f0e9f4;
+  --LIGHT-GREEN: #e8e8e8;
+  --LIGHT-ORANGE: #f9d9d7;
+  --MAIN-ORANGE: #fe7750;
+  --SECONDARY-PURPLE: #942eb8;
+  --MAIN-PURPLE: #46005a;
+  --MAIN-DARK: black;
+  --MAIN-WHITE: white;
 }
 
 /* resets */
