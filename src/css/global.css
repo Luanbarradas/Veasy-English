@@ -1,0 +1,26 @@
+:root {
+    /*fontes */
+
+    --MAIN_FONT: "BW MODELICA SS01";
+    --SENCOND_FONT: "roboto";
+
+    /*cores da marca*/
+    --PLANO_FUNDO: #fff;
+    --COR_LARANJA: #FE7750;
+    --COR_ROXA: #46005A;
+    --COR_BLACK: black;
+
+    /* possiveis cores complementares, cores mais claras*/
+    --CINZA: #E8E8E8;
+    --ROXO_CLARO: #e4ceea;
+    --ROZADO: #F9D9D7;
+    --ROXO: #952eb7;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}

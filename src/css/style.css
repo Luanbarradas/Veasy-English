@@ -1,0 +1,39 @@
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--COR_LARANJA);
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    padding-right: 300px;
+}
+
+header li {
+    margin-left: 50px;
+    transition: box-shadow 0.3s;
+    font-size: 70px;
+
+
+}
+
+header li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: var(--COR_ROXA);
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
