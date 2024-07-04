@@ -53,6 +53,9 @@ header {
     bottom: 1.25rem;
     cursor: pointer;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s;
 }
 
