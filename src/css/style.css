@@ -17,16 +17,16 @@ header ul {
 
 header li {
     margin-left: 50px;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, color 0.3;
     font-size: 70px;
 
 
 }
 
 header li:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 80px var(--MAIN-ORANGE);
     cursor: pointer;
-    color: var(--MAIN-PURPLE);
+    color: var(--MAIN-ORANGE);
 }
 
 header li:first-child {
