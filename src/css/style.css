@@ -21,7 +21,7 @@ header {
 }
 
 .header_section li:hover {
-    box-shadow: 0 0 5rem var(--MAIN-ORANGE);
+    /* box-shadow: 0 0 5rem var(--MAIN-ORANGE);*/
     cursor: pointer;
     color: var(--MAIN-ORANGE);
 }
