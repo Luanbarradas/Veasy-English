@@ -1,26 +1,36 @@
 :root {
-    /*fontes */
+  /*fontes */
 
-    --MAIN_FONT: "BW MODELICA SS01";
-    --SENCOND_FONT: "roboto";
+  --MAIN_FONT: "BW MODELICA SS01";
+  --SENCOND_FONT: "roboto";
 
-    /*cores da marca*/
-    --PLANO_FUNDO: #fff;
-    --COR_LARANJA: #FE7750;
-    --COR_ROXA: #46005A;
-    --COR_BLACK: black;
+  /*cores da marca*/
+  --PLANO_FUNDO: #fff;
+  --COR_LARANJA: #fe7750;
+  --COR_ROXA: #46005a;
+  --COR_BLACK: black;
 
-    /* possiveis cores complementares, cores mais claras*/
-    --CINZA: #E8E8E8;
-    --ROXO_CLARO: #e4ceea;
-    --ROZADO: #F9D9D7;
-    --ROXO: #952eb7;
-
+  /* possiveis cores complementares, cores mais claras*/
+  --CINZA: #e8e8e8;
+  --ROXO_CLARO: #e4ceea;
+  --ROZADO: #f9d9d7;
+  --ROXO: #952eb7;
 }
 
+/* resets */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
