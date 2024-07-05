@@ -36,3 +36,11 @@ button {
 ul {
   list-style: none;
 }
+
+p,
+h1,
+h2,
+h3,
+li {
+  font-family: var(--SENCOND_FONT);
+}
