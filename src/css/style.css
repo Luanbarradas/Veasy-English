@@ -1,59 +1,47 @@
 header {
-    background-color: var(--LIGHT-ORANGE);
+  background-color: var(--LIGHT-ORANGE);
 }
 
 .header_section {
-    margin: 0 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_section ul {
-<<<<<<< HEAD
   color: var(--MAIN-ORANGE);
   display: flex;
-=======
-    color: var(--MAIN-PURPLE);
-    display: flex;
->>>>>>> 77963f5144f8df6d40598ea546318a20ec42131d
 }
 
 .header_section li {
-    margin-left: 1.8rem;
-    transition: box-shadow 0.3s, color 0.3;
-    font-size: 1.2rem;
+  margin-left: 1.8rem;
+  transition: box-shadow 0.3s, color 0.3;
+  font-size: 1.2rem;
 }
 
 .header_section li:hover {
-<<<<<<< HEAD
   /* box-shadow: 0 0 2rem var(--MAIN-ORANGE); */
   cursor: pointer;
   color: var(--MAIN-WHITE);
-=======
-    /* box-shadow: 0 0 5rem var(--MAIN-ORANGE);*/
-    cursor: pointer;
-    color: var(--MAIN-ORANGE);
->>>>>>> 77963f5144f8df6d40598ea546318a20ec42131d
 }
 
 .header_section ul li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    width: 9.3rem;
-    padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  width: 9.3rem;
+  padding: 1.2rem;
 }
 
 .logo img {
-    width: 100%;
-    object-fit: contain;
+  width: 100%;
+  object-fit: contain;
 }
 
-<<<<<<< HEAD
 .section_student {
   border-radius: 20px;
   margin: 3rem 6rem;
@@ -66,30 +54,28 @@ header {
   font-family: var(--SENCOND_FONT);
   color: var(--MAIN-WHITE);
 }
-=======
 
 .support-ball {
-    width: 3.125rem;
-    height: 3.125rem;
-    background-color: var(--MAIN-PURPLE);
-    border-radius: 50%;
-    position: fixed;
-    right: 1.25rem;
-    bottom: 1.25rem;
-    cursor: pointer;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: var(--MAIN-PURPLE);
+  border-radius: 50%;
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
 }
 
 .support-ball:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .support-ball i {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
->>>>>>> 77963f5144f8df6d40598ea546318a20ec42131d
