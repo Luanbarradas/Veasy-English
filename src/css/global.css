@@ -44,3 +44,7 @@ h3,
 li {
   font-family: var(--SENCOND_FONT);
 }
+
+body {
+  background-color: var(--LIGHT-PURPLE);
+}
