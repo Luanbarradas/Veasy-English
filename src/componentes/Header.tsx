@@ -10,9 +10,9 @@ export const Header = () => {
                 </div>
 
                 <ul className='flex text-purple-950 space-x-7 '>
-                    <li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white '>Home</li>
-                    <li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Sobre</li>
-                    <li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Planos</li>
+                    <a href="#"><li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white '>Home</li></a>
+                    <a href="#"> <li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Sobre</li></a>
+                    <a href="#"><li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Planos</li></a>
                 </ul>
             </section>
         </header>
