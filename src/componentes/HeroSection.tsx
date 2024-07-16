@@ -10,7 +10,7 @@ export const HeroSection = () => {
                 <p className="text-lg md:text-xl lg:text-2xl text-black mt-4">
                     Aprenda inglês de forma fácil e divertida
                 </p>
-                <a href="#"> <button className="mt-8 px-8 py-4 bg-purple-600 text-white text-lg font-semibold rounded hover:bg-purple-900 transition duration-300">
+                <a href="#"> <button className="mt-8 px-8 py-4 bg-orange-500 text-white text-lg font-semibold rounded hover:bg-orange-600 transition duration-300">
                     Comece Agora
                 </button></a>
             </div>
