@@ -27,7 +27,7 @@ export const Plano: React.FC = () => {
             <h2 className="text-4xl font-bold text-center mb-8 text-orange-500">Selecione um Plano</h2>
             <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
                 {planos.map((plano, index) => (
-                    <div key={index} className="bg-purple-900 p-4 rounded-3xl shadow-md w-80 text-center">
+                    <div key={index} className="bg-purple-950 p-4 rounded-3xl shadow-md w-80 text-center">
                         <div className="relative">
                             <img src={plano.image} alt={plano.title} className="h-48 w-full object-cover mb-4 rounded-3xl overflow-hidden" />
                             <div className="absolute inset-0 rounded"></div>
