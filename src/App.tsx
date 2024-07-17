@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="bg-customBackground min-h-screen">
+    <div className="bg-purple-100 min-h-screen">
       <Header />
 
       <HeroSection />
