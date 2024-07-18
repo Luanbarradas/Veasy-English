@@ -8,7 +8,7 @@ export const Main = () => {
                 </div>
             </div>
             <div className="text-left w-1/2 ">
-                <h1 className="text-purple-950 text-lg font-bold text-3xl md:text-4xl ">
+                <h1 className="text-purple-950  font-bold text-3xl md:text-4xl ">
                     Sobre Mim!
                 </h1>
                 <h2 className="mt-8 text-white font-bold">Praesent luctus ligula sed blandit tincidunt. Pellentesque non suscipit.</h2>
