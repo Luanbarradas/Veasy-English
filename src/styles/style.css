@@ -1,0 +1,38 @@
+.header {
+    background-color: #f97316; 
+}
+
+.header-section {
+    margin: 0 6rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 7rem; 
+    padding: 0.75rem;
+    object-fit: contain;
+}
+
+.header-nav {
+    display: flex;
+    color: #6b21a8;
+    gap: 1.75rem; 
+}
+
+.header-nav a {
+    margin-left: 1.75rem; 
+    transition: all 0.3s ease-in-out;
+    font-size: 1.125rem;
+    cursor: pointer; 
+}
+
+.header-nav a:hover {
+    color: #ffffff;
+}

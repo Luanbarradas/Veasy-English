@@ -1,20 +1,19 @@
-import logo from '../assets/logo_principal.svg'
+import logo from '../assets/logo_principal.svg';
+import '../styles/style.css';
 
 export const Header = () => {
     return (
-        <header className="bg-orange-500">
-
-            <section className="mx-24 flex justify-between items-center ">
-                <div className="flex items-center ">
-                    <img src={logo} alt="logo" className='w-28 p-3 object-contain ' />
+        <header className="header">
+            <section className="header-section">
+                <div className="header-logo">
+                    <img src={logo} alt="logo" />
                 </div>
-
-                <ul className='flex text-purple-950 space-x-7 '>
-                    <a href="#"><li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white '>Home</li></a>
-                    <a href="#"> <li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Sobre</li></a>
-                    <a href="#"><li className='ml-7 transition duration-300 ease-in-out text-lg hover:cursor-pointer hover:text-white'>Planos</li></a>
+                <ul className="header-nav">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Sobre</li></a>
+                    <a href="#"><li>Planos</li></a>
                 </ul>
             </section>
         </header>
-    )
-}
+    );
+};
