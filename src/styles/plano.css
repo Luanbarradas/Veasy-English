@@ -1,0 +1,78 @@
+.plano-section {
+    padding: 3rem 0;
+    background-color: #faf5ff;
+}
+
+.plano-title {
+    font-size: 2.25rem; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 2rem; 
+    color: var(--MAIN-ORANGE); 
+}
+
+.planos-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5rem; 
+}
+
+
+
+.plano-card {
+    background-color: var(--MAIN-PURPLE); 
+    padding: 1rem; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 20rem;
+    text-align: center; 
+}
+
+.plano-image-wrapper {
+    position: relative;
+}
+
+.plano-image {
+    height: 12rem; 
+    width: 100%; 
+    object-fit: cover; 
+    margin-bottom: 1rem; 
+    border-radius: 1.5rem; 
+    overflow: hidden; 
+}
+
+.plano-title-card {
+    font-size: 1.25rem; 
+    font-weight: 600;
+    margin-bottom: 0.5rem; 
+    color: #ffffff; 
+}
+
+.plano-price {
+    font-size: 1.125rem;
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+    color: #ffffff; 
+}
+
+.plano-button-label {
+    display: block; 
+    margin-bottom: 1rem; 
+}
+
+.plano-button {
+    background-color: var(--MAIN-ORANGE); 
+    padding: 0.5rem 1.5rem; 
+    color: #ffffff; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.plano-button:hover {
+    background-color: #c2410c; 
+}

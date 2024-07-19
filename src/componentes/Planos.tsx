@@ -1,6 +1,7 @@
 import planoIndividual from "../assets/aulaIndidual.jpg";
 import planoGrupo from "../assets/aulaGrupo.jpg";
 import conversacao from "../assets/conversacao.jpg";
+import '../styles/plano.css';
 
 const planos = [
   {
@@ -20,33 +21,26 @@ const planos = [
   },
 ];
 
-export const Plano: React.FC = () => {
+export const Plano = () => {
   return (
-    <section className="py-12 bg-purple-100">
-      <h2 className="text-4xl font-bold text-center mb-8 text-orange-500">
+    <section className="plano-section">
+      <h2 className="plano-title">
         Selecione um Plano
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+      <div className="planos-container">
         {planos.map((plano, index) => (
-          <div
-            key={index}
-            className="bg-fuchsia-950 p-4 rounded-3xl shadow-md w-80 text-center"
-          >
-            <div className="relative">
-              <img
-                src={plano.image}
-                alt={plano.title}
-                className="h-48 w-full object-cover mb-4 rounded-3xl overflow-hidden"
-              />
+          <div key={index} className="plano-card">
+            <div className="plano-image-wrapper">
+              <img src={plano.image} alt={plano.title} className="plano-image" />
               <div className="absolute inset-0 rounded"></div>
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">
+            <h3 className="plano-title-card">
               {plano.title}
             </h3>
-            <p className="text-lg font-bold mb-4 text-white">{plano.price}</p>
-            <label className="block mb-4">
+            <p className="plano-price">{plano.price}</p>
+            <label className="plano-button-label">
               <input type="radio" name="plano" className="hidden" />
-              <span className=" bg-orange-500 px-6 py-2 text-white text-base font-semibold rounded-lg hover:bg-orange-700  transition duration-300 cursor-pointer">
+              <span className="plano-button">
                 Assine Já
               </span>
             </label>
