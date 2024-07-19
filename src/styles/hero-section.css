@@ -8,7 +8,7 @@
     align-items: center; 
     padding: 0 3rem; 
     margin-top: 4rem; 
-    background-color: #f0e9f4; 
+    background-color:var(--LIGHT-PURPLE); 
 }
 
 .hero-text {
@@ -18,7 +18,7 @@
 .hero-title {
     font-size: 2.25rem; 
     font-weight: bold; 
-    color: #6b21a8;
+    color: var(--MAIN-PURPLE);
 }
 
 @media (min-width: 768px) {
@@ -54,7 +54,7 @@
 .hero-button {
     margin-top: 2rem; 
     padding: 1rem 2rem; 
-    background-color: #f97316;
+    background-color: var( --MAIN-ORANGE);
     color: #ffffff; 
     font-size: 1.125rem;
     font-weight: 600; 
@@ -63,7 +63,7 @@
 }
 
 .hero-button:hover {
-    background-color: #ea580c;
+    background-color: var( --MAIN-ORANGE);
 }
 
 .hero-image-container {
