@@ -6,6 +6,9 @@
   --SECONDARY-PURPLE: #942eb8;
   --MAIN-PURPLE: #46005a;
 
+  --BLACK: black;
+  --WHITE: white;
+
   --MAIN-FONT: "Roboto", Arial, Helvetica, sans_serif;
 }
 
@@ -27,4 +30,16 @@ button {
 
 body {
   background-color: var(--LIGHT-PURPLE);
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--MAIN-ORANGE);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
