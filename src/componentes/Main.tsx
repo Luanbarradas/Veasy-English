@@ -25,12 +25,14 @@ export const Main = () => {
 
         <div className="main-stats">
           <div className="main-stat">
-            <p className="main-stat-number">2</p>
-            <p className="main-stat-text">Years Of Experience</p>
+            <p className="main-stat-text">
+              <span className="main-stat-number">2 </span>Years Of Experience
+            </p>
           </div>
           <div className="main-stat">
-            <p className="main-stat-number">150</p>
-            <p className="main-stat-text">Trusted By Clients</p>
+            <p className="main-stat-text">
+              <span className="main-stat-number">150 </span>Trusted By Clients
+            </p>
           </div>
         </div>
       </div>

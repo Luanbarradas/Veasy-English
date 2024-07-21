@@ -1,7 +1,7 @@
 import planoIndividual from "../assets/aulaIndidual.jpg";
 import planoGrupo from "../assets/aulaGrupo.jpg";
 import conversacao from "../assets/conversacao.jpg";
-import '../styles/plano.css';
+import "../styles/plano.css";
 
 const planos = [
   {
@@ -24,26 +24,25 @@ const planos = [
 export const Plano = () => {
   return (
     <section className="plano-section">
-      <h2 className="plano-title">
-        Selecione um Plano
-      </h2>
+      <h2 className="plano-title">Selecione um Plano</h2>
       <div className="planos-container">
         {planos.map((plano, index) => (
           <div key={index} className="plano-card">
             <div className="plano-image-wrapper">
-              <img src={plano.image} alt={plano.title} className="plano-image" />
-              <div className="absolute inset-0 rounded"></div>
+              <img
+                src={plano.image}
+                alt={plano.title}
+                className="plano-image"
+              />
             </div>
-            <h3 className="plano-title-card">
-              {plano.title}
-            </h3>
-            <p className="plano-price">{plano.price}</p>
-            <label className="plano-button-label">
-              <input type="radio" name="plano" className="hidden" />
-              <span className="plano-button">
-                Assine Já
-              </span>
-            </label>
+            <div className="plano-card-botton">
+              <h3 className="plano-title-card">{plano.title}</h3>
+              <p className="plano-price">{plano.price}</p>
+              <label className="plano-button-label">
+                <input type="radio" name="plano" className="hidden" />
+                <span className="button-pattern">Assine Já</span>
+              </label>
+            </div>
           </div>
         ))}
       </div>
