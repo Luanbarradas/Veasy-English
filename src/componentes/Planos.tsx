@@ -6,7 +6,7 @@ import "../styles/plano.css";
 const planos = [
   {
     title: "Plano Individual",
-    price: "R$100/mês",
+    price: "R$189/mês",
     image: planoIndividual,
   },
   {
@@ -18,7 +18,13 @@ const planos = [
     title: "Conversação",
     price: "R$150/mês",
     image: conversacao,
+
   },
+  {
+    title: "talk the talk",
+    price: 'R$150/mês',
+    //image:
+  }
 ];
 
 export const Plano = () => {
@@ -40,7 +46,7 @@ export const Plano = () => {
               <p className="plano-price">{plano.price}</p>
               <label className="plano-button-label">
                 <input type="radio" name="plano" className="hidden" />
-                <span className="button-pattern">Assine Já</span>
+                <span className="button-pattern">Saiba mais</span>
               </label>
             </div>
           </div>
