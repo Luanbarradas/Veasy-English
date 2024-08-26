@@ -1,0 +1,44 @@
+.hero-section {
+  height: 28rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  margin: 3rem 0;
+}
+
+.hero-text {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--MAIN-PURPLE);
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--BLACK);
+}
+
+.hero-button {
+  padding: 1rem 2rem;
+}
+
+.hero-image-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  object-fit: contain;
+}

@@ -1,0 +1,50 @@
+.plano-section {
+  margin: 3rem 0;
+}
+
+.plano-title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--MAIN-ORANGE);
+}
+
+.planos-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.plano-card {
+  background-color: var(--MAIN-PURPLE);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  height: 28rem;
+  text-align: center;
+}
+
+.plano-card-botton {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.plano-image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.plano-title-card,
+.plano-price {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--WHITE);
+}

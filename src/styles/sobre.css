@@ -1,0 +1,58 @@
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  margin: 4rem 0;
+  background-color: var(--MAIN-ORANGE);
+}
+
+.main-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-image-wrapper {
+  height: 20rem;
+  padding: 1rem 0;
+}
+
+.main-image {
+  height: 100%;
+  border-radius: 1.5rem;
+  border-width: 0.5rem;
+}
+
+.main-text {
+  text-align: left;
+  width: 40rem;
+}
+
+.main-title {
+  color: var(--MAIN-PURPLE);
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+.main-subtitle,
+.main-description {
+  margin-top: 2rem;
+  color: var(--WHITE);
+  font-weight: 500;
+}
+
+.main-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.main-stat-number {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--MAIN-PURPLE);
+}
+
+.main-stat-text {
+  color: var(--WHITE);
+}
