@@ -48,3 +48,20 @@
   font-weight: 500;
   color: var(--WHITE);
 }
+.opacidade{
+  opacity:0.4;
+}
+
+
+
+.modal-overlay{
+  position:fixed ;
+  left : 50% ;
+  top: 50%;
+  z-index:99;
+  width : 1000px;
+  height:1000px;
+  margin-top:-500px;
+  margin-left:-500px;
+  
+}

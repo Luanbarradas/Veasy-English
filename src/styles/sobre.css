@@ -56,3 +56,6 @@
 .main-stat-text {
   color: var(--WHITE);
 }
+.opacidade{
+  opacity:0.4;
+}
