@@ -8,7 +8,7 @@ import './App.tsx'
 
 function App() {
   return (
-    <div id="global" className="bg-purple-100 min-h-screen ">
+    <div className="bg-purple-100 min-h-screen ">
       <Header />
 
       <HeroSection />
