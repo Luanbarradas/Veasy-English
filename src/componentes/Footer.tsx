@@ -2,46 +2,35 @@ import instagramIcon from "../assets/instagram-icon.svg";
 import emailIcon from "../assets/email-icon.svg";
 import whatsappIcon from "../assets/whatsapp-icon.svg";
 
-export const Footer = () => {
+import "../styles/footer.css";
+
+export const Footer: React.FC = () => {
   return (
-    <footer className="bg-fuchsia-950 border-t-4 rounded-t-3xl">
-      <section className="p-8 flex justify-around">
+    <footer className="footer">
+      <section className="footer-section">
         <div>
-          <h2 className="text-xl font-semibold mb-2 text-white">
-            Designer Awards 2022
-          </h2>
-          <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum
-            leo tellus.
+          <h2 className="footer-title">Designer Awards 2022</h2>
+          <p className="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum leo tellus.
           </p>
-          <p className="text-xl font-semibold mb-2 text-white">
-            @blablabla.com
-          </p>
+          <p className="email">@blablabla.com</p>
         </div>
         <div>
-          <ul className="text-white">
+          <ul className="footer-list">
             <li>Lore</li>
             <li>Ipsum</li>
             <li>Consectetur</li>
             <li>Duis rutrum</li>
           </ul>
-          <div className="h-8 w-28 flex items-center justify-between">
-            <button className="h-full rounded-full bg-orange-500 p-1">
-              <img
-                src={instagramIcon}
-                alt="Instagram"
-                className="h-full w-auto"
-              />
+          <div className="social-buttons">
+            <button>
+              <img src={instagramIcon} alt="Instagram" />
             </button>
-            <button className="h-full rounded-full bg-orange-500 p-1">
-              <img src={emailIcon} alt="Email" className="h-full w-auto" />
+            <button>
+              <img src={emailIcon} alt="Email" />
             </button>
-            <button className="h-full rounded-full bg-orange-500 p-1">
-              <img
-                src={whatsappIcon}
-                alt="WhatsApp"
-                className="h-full w-auto"
-              />
+            <button>
+              <img src={whatsappIcon} alt="WhatsApp" />
             </button>
           </div>
         </div>
