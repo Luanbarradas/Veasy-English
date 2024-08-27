@@ -3,11 +3,12 @@ import { HeroSection } from "./componentes/HeroSection.tsx";
 import { Plano } from "./componentes/Planos.tsx";
 import { Footer } from "./componentes/Footer.tsx";
 import { Main } from './componentes/Main.tsx';
+import "./index.css";
 import './App.tsx'
 
 function App() {
   return (
-    <div className="bg-purple-100 min-h-screen">
+    <div className="bg-purple-100 min-h-screen ">
       <Header />
 
       <HeroSection />

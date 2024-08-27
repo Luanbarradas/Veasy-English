@@ -42,3 +42,7 @@
 .hero-image {
   object-fit: contain;
 }
+
+.opacidade{
+  opacity:0.4;
+}
