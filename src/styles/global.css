@@ -58,6 +58,6 @@ body {
 .button-pattern:hover {
   filter: brightness(0.9);
 }
-.opacidade{
-  opacity:0.4;
+.opacidade {
+  opacity: 0.4;
 }

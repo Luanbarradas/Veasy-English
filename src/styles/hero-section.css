@@ -3,11 +3,8 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6rem;
-  margin: 3rem 0;
+  justify-content: space-around;
+  margin: 3rem 6rem;
 }
 
 .hero-text {
@@ -22,6 +19,8 @@
   font-size: 4.5rem;
   font-weight: bold;
   color: var(--MAIN-PURPLE);
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-subtitle {
@@ -31,18 +30,18 @@
 
 .hero-button {
   padding: 1rem 2rem;
+  width: 200px;
 }
 
 .hero-image-container {
   height: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .hero-image {
   object-fit: contain;
 }
 
-.opacidade{
-  opacity:0.4;
+.opacidade {
+  opacity: 0.4;
 }

@@ -9,7 +9,7 @@ import { Feedback } from "./componentes/Feedback.tsx";
 
 function App() {
   return (
-    <div className="bg-purple-100 min-h-screen ">
+    <div>
       <Header />
 
       <HeroSection />

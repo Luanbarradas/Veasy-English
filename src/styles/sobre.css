@@ -1,20 +1,14 @@
 .main-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 3rem 6rem;
   margin: 4rem 0;
   background-color: var(--MAIN-ORANGE);
 }
 
-.main-image-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-image-wrapper {
   height: 20rem;
-  padding: 1rem 0;
 }
 
 .main-image {
@@ -25,7 +19,7 @@
 
 .main-text {
   text-align: left;
-  width: 40rem;
+  width: 50rem;
 }
 
 .main-title {
@@ -56,6 +50,6 @@
 .main-stat-text {
   color: var(--WHITE);
 }
-.opacidade{
-  opacity:0.4;
+.opacidade {
+  opacity: 0.4;
 }
