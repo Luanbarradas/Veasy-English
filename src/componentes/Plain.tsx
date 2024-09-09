@@ -8,41 +8,94 @@ import aulaIndividualDuasSemanas from "../assets/aulaindividualdois.png";
 import aulaInvidualTresSemanas from "../assets/aulaindidualtres.png";
 import talk from "../assets/talkthetalk.png";
 
+import Modal from "./Modal";
 import "../styles/plano.css";
+
+interface ModalData {
+  title: string;
+  benefits: string[];
+  frequency: string;
+  price: string;
+}
 
 const planos = [
   {
     title: "Plano Individual",
     price: "R$189,00/mês",
     image: planoIndividual,
-    modalImage: aulaindividual,
+    modalData: {
+      title: "Aula Individual",
+      benefits: [
+        "Aulas online ao vivo",
+        "Foco na comunicação",
+        "Horários flexíveis",
+        "Material exclusivo",
+        "No seu ritmo",
+        "Certificado",
+      ],
+      frequency: "1x na Semana",
+      price: "R$189,00/mês",
+    } as ModalData,
   },
   {
     title: "Plano individual 2x",
     price: "R$299,90/mês",
     image: planoGrupo,
-    modalImage: aulaIndividualDuasSemanas,
+    modalData: {
+      title: "Plano Individual 2x",
+      benefits: [
+        "Aulas online ao vivo",
+        "Foco na comunicação",
+        "Horários flexíveis",
+        "Material exclusivo",
+        "No seu ritmo",
+        "Certificado",
+      ],
+      frequency: "2x na Semana",
+      price: "R$299,90/mês",
+    } as ModalData,
   },
   {
     title: "Plano indivual 3x",
     price: "R$380,00/mês",
     image: conversacao,
-    modalImage: aulaInvidualTresSemanas,
+    modalData: {
+      title: "Plano Individual 3x",
+      benefits: [
+        "Aulas online ao vivo",
+        "Foco na comunicação",
+        "Horários flexíveis",
+        "Material exclusivo",
+        "No seu ritmo",
+        "Certificado",
+      ],
+      frequency: "3x na Semana",
+      price: "R$380,00/mês",
+    } as ModalData,
   },
   {
     title: "talk the talk",
     price: "R$159,90/mês",
     image: theTalk,
-    modalImage: talk,
+    modalData: {
+      title: "Talk the Talk",
+      benefits: [
+        "Aulas de conversação",
+        "Material exclusivo",
+        "Prática em grupo",
+      ],
+      frequency: "1x na Semana",
+      price: "R$159,90/mês",
+    } as ModalData,
   },
 ];
 
-export const Plano = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState<string | null>(null);
+export const Plain = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [modalData, setModalData] = useState<ModalData | null>(null);
 
-  const openModal = (image: string) => {
-    setCurrentImage(image);
+  const openModal = (data: ModalData) => {
+    setModalData(data);
     setIsOpen(true);
     document.querySelector(".plano-section")?.classList.add("opacidade");
     document.querySelector(".header")?.classList.add("opacidade");
@@ -52,7 +105,7 @@ export const Plano = () => {
 
   const closeModal = () => {
     setIsOpen(false);
-    setCurrentImage(null);
+    setModalData(null);
     document.querySelector(".plano-section")?.classList.remove("opacidade");
     document.querySelector(".header")?.classList.remove("opacidade");
     document.querySelector(".hero-section")?.classList.remove("opacidade");
@@ -79,7 +132,7 @@ export const Plano = () => {
                 <label className="plano-button-label">
                   <button
                     className="button-pattern"
-                    onClick={() => openModal(plano.modalImage)}
+                    onClick={() => openModal(plano.modalData)}
                   >
                     Saiba mais
                   </button>
@@ -90,15 +143,8 @@ export const Plano = () => {
         </div>
       </section>
       {/* Modal */}
-      {isOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>
-              &times;
-            </button>
-            {currentImage && <img src={currentImage} alt="Plano Detalhe" />}
-          </div>
-        </div>
+      {isOpen && modalData && (
+        <Modal isOpen={isOpen} closeModal={closeModal} modalData={modalData} />
       )}
     </>
   );
