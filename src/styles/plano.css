@@ -125,7 +125,7 @@
   height: 28rem;
   text-align: center;
   flex: 1 1 calc(50% - 1.5rem);
-  /max-width: 20rem;
+  max-width: 20rem;
 }
 
 @media (max-width: 768px) {

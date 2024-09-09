@@ -6,7 +6,7 @@ import { Main } from "./componentes/Main.tsx";
 import "./index.css";
 import "./App.tsx";
 import { Feedback } from "./componentes/Feedback.tsx";
-import { Plain } from "./componentes/Plain.tsx";
+import { Plan } from "./componentes/Plan.tsx";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 
       <Main />
 
-      <Plain />
+      <Plan />
 
       <Feedback />
 

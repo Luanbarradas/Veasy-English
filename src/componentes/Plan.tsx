@@ -90,7 +90,7 @@ const planos = [
   },
 ];
 
-export const Plain = () => {
+export const Plan = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [modalData, setModalData] = useState<ModalData | null>(null);
 
