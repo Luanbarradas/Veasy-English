@@ -14,16 +14,20 @@
   background: var(--MAIN-PURPLE);
   color: var(--WHITE);
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   max-width: 30rem;
+  max-height: 70vh;
+  overflow-y: auto;
   position: relative;
-  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-close {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  margin: 1rem;
   color: var(--WHITE);
   cursor: pointer;
   transition: color 0.3s;

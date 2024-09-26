@@ -1,40 +1,61 @@
-import instagramIcon from "../assets/instagram-icon.svg";
-import emailIcon from "../assets/email-icon.svg";
-import whatsappIcon from "../assets/whatsapp-icon.svg";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { useScroll } from "../hook/useScroll";
 
 import "../styles/footer.css";
 
 export const Footer: React.FC = () => {
+  const scrollToSection = useScroll();
+
+  const handleWhatsAppClick = () => {
+    const whatsappNumber = "";
+    const message = "Olá, gostaria de mais informações sobre os cursos";
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+  };
+
+  const handleInstagramClick = () => {
+    const username = "veasy_english";
+    window.open(`https://www.instagram.com/${username}/`, "_blank");
+  };
+
   return (
     <footer className="footer">
-      <section className="footer-section">
-        <div>
-          <h2 className="footer-title">Designer Awards 2022</h2>
-          <p className="footer-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum leo tellus.
-          </p>
-          <p className="email">@blablabla.com</p>
+      <div className="footer-content">
+        <div className="footer-section">
+          <h3>Veasy English</h3>
+          <p>Tornando o aprendizado de inglês fácil e acessível para todos.</p>
         </div>
-        <div>
-          <ul className="footer-list">
-            <li>Lore</li>
-            <li>Ipsum</li>
-            <li>Consectetur</li>
-            <li>Duis rutrum</li>
+        <div className="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a onClick={() => scrollToSection("home")}>Home</a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection("about")}>Sobre</a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection("plain-section")}>Planos</a>
+            </li>
           </ul>
-          <div className="social-buttons">
-            <button>
-              <img src={instagramIcon} alt="Instagram" />
-            </button>
-            <button>
-              <img src={emailIcon} alt="Email" />
-            </button>
-            <button>
-              <img src={whatsappIcon} alt="WhatsApp" />
-            </button>
+        </div>
+        <div className="footer-section">
+          <h3>Fale conosco</h3>
+          <div className="social-icons">
+            <a onClick={handleWhatsAppClick}>
+              <FaWhatsapp size={24} />
+            </a>
+            <a onClick={handleInstagramClick}>
+              <FaInstagram size={24} />
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="footer-bottom">
+        <p>
+          &copy; {new Date().getFullYear()} Veasy English. Todos os direitos
+          reservados.
+        </p>
+      </div>
     </footer>
   );
 };

@@ -6,39 +6,6 @@
   padding: 20px;
 }
 
-/* .feedback-title {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: var(--MAIN-PURPLE);
-}
-
-.feedback {
-  padding: 15px;
-  border-radius: 0.5rem;
-  background-color: var(--MAIN-ORANGE);
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: filter 0.3s;
-}
-
-.feedback:hover {
-  filter: brightness(0.9);
-}
-
-.feedback h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  color: var(--MAIN-PURPLE);
-}
-
-.feedback p {
-  margin: 0;
-  color: var(--WHITE);
-} */
-
 .feedback-container .container {
   max-width: 1200px;
   margin: 0 auto;

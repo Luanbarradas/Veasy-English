@@ -1,66 +1,60 @@
-@import url("./global.css");
-
 .footer {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-  border-top-width: 4px;
   background-color: var(--MAIN-PURPLE);
+  color: var(--WHITE);
+  padding: 2rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
 
 .footer-section {
-  display: flex;
-  padding: 2rem;
-  justify-content: space-around;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
 }
 
-.footer-title {
-  margin-bottom: 0.5rem;
+.footer-section h3 {
   font-size: 1.25rem;
-  line-height: 1.75rem;
   font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: var(--LIGHT-GREEN);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section a {
   color: var(--WHITE);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.footer-text {
-  color: var(--WHITE);
-}
-
-.email {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  color: var(--WHITE);
-}
-
-.footer-list {
-  color: var(--WHITE);
-}
-
-.footer-list li {
-  margin-bottom: 0.5rem;
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 7rem;
-  height: 2rem;
-}
-
-.social-buttons button {
-  padding: 0.25rem;
-  border-radius: 9999px;
-  height: 100%;
-  background-color: var(--MAIN-ORANGE);
-}
-
-.social-buttons button:hover {
+.footer-section a:hover {
   filter: brightness(0.9);
 }
 
-.social-buttons img {
-  width: auto;
-  height: 100%;
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--LIGHT-GREEN);
 }

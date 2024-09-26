@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTimes, FaCheck } from "react-icons/fa";
-
 import "../styles/modal.css";
 
 interface ModalData {
@@ -8,6 +7,7 @@ interface ModalData {
   benefits: string[];
   frequency: string;
   price: string;
+  whatsappMessage?: string;
 }
 
 interface ModalProps {
@@ -18,6 +18,12 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, modalData }) => {
   if (!isOpen) return null;
+
+  const handleWhatsAppClick = () => {
+    const whatsappNumber = "";
+    const message = encodeURIComponent(modalData.whatsappMessage || "");
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+  };
 
   return (
     <div className="modal-overlay">
@@ -49,7 +55,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, modalData }) => {
         </ul>
 
         <p className="modal-frequency">
-          Frequência:{" "}
+          Frequência:
           <span className="modal-frequency-value">{modalData.frequency}</span>
         </p>
 
@@ -57,7 +63,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, modalData }) => {
           Preço: <span className="modal-price-value">{modalData.price}</span>
         </p>
 
-        <button className="button-pattern" onClick={closeModal}>
+        <button className="button-pattern" onClick={handleWhatsAppClick}>
           Tenho interesse
         </button>
       </div>
