@@ -20,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, modalData }) => {
   if (!isOpen) return null;
 
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "";
+    const whatsappNumber = "5591991941999";
     const message = encodeURIComponent(modalData.whatsappMessage || "");
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };

@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   const scrollToSection = useScroll();
 
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "";
+    const whatsappNumber = "5591991941999";
     const message = "Olá, gostaria de mais informações sobre os cursos";
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
