@@ -1,4 +1,4 @@
-import hero from "../assets/hero.svg";
+import hero from "../assets/hero.png";
 import { useScroll } from "../hook/useScroll";
 
 import "../styles/hero-section.css";
