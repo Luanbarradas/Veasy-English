@@ -22,16 +22,18 @@
   padding: 1rem;
   border-radius: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 20rem;
-  height: 28rem;
+  width: 18rem;
+  height: 26rem;
   text-align: center;
   flex: 1 1 calc(50% - 1.5rem);
-  max-width: 20rem;
+  max-width: 16rem;
 }
 
 @media (max-width: 768px) {
   .plano-card {
     flex: 1 1 100%;
+    height: 28rem;
+    max-width: 20rem;
   }
 }
 

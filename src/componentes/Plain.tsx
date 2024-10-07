@@ -16,7 +16,7 @@ interface ModalData {
 const plains = [
   {
     title: "Plano Individual",
-    price: "R$189,00/mês",
+    price: "R$220,00/mês",
     image: planoIndividual,
     modalData: {
       title: "Aula Individual",
@@ -29,14 +29,14 @@ const plains = [
         "Certificado",
       ],
       frequency: "1x na Semana",
-      price: "R$189,00/mês",
+      price: "R$220,00/mês",
       whatsappMessage:
         "Olá, estou interessado no Plano Individual uma vez por semana",
     } as ModalData,
   },
   {
     title: "Plano individual 2x",
-    price: "R$299,90/mês",
+    price: "R$350,00/mês",
     image: planoGrupo,
     modalData: {
       title: "Plano Individual 2x",
@@ -49,14 +49,14 @@ const plains = [
         "Certificado",
       ],
       frequency: "2x na Semana",
-      price: "R$299,90/mês",
+      price: "R$350,00/mês",
       whatsappMessage:
         "Olá, estou interessado no Plano Individual duas vezes por semana",
     } as ModalData,
   },
   {
     title: "Plano indivual 3x",
-    price: "R$380,00/mês",
+    price: "R$440,00/mês",
     image: conversacao,
     modalData: {
       title: "Plano Individual 3x",
@@ -69,14 +69,34 @@ const plains = [
         "Certificado",
       ],
       frequency: "3x na Semana",
-      price: "R$380,00/mês",
+      price: "R$440,00/mês",
       whatsappMessage:
         "Olá, estou interessado no Plano Individual três vezes por semana",
     } as ModalData,
   },
   {
+    title: "Plano indivual 4x",
+    price: "R$550,00/mês",
+    image: conversacao,
+    modalData: {
+      title: "Plano Individual 4x",
+      benefits: [
+        "Aulas online ao vivo",
+        "Foco na comunicação",
+        "Horários flexíveis",
+        "Material exclusivo",
+        "No seu ritmo",
+        "Certificado",
+      ],
+      frequency: "4x na Semana",
+      price: "R$550,00/mês",
+      whatsappMessage:
+        "Olá, estou interessado no Plano Individual quatro vezes por semana",
+    } as ModalData,
+  },
+  {
     title: "Talk the talk",
-    price: "R$159,90/mês",
+    price: "R$199,00/mês",
     image: theTalk,
     modalData: {
       title: "Talk the Talk",
@@ -86,7 +106,7 @@ const plains = [
         "Prática em grupo",
       ],
       frequency: "1x na Semana",
-      price: "R$159,90/mês",
+      price: "R$199,00/mês",
       whatsappMessage: "Olá, estou interessado no Plano Talk the Talk",
     } as ModalData,
   },
